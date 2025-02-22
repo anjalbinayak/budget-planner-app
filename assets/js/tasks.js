@@ -184,7 +184,7 @@ sendChatBtn.addEventListener("click", async () => {
 async function callGeminiAI(message) {
   try {
     const genAI = new GoogleGenerativeAI(
-      "AIzaSyA8MhBqbr8TRx4yp0nYuhtv7vnntZZNWOw"
+      "AIzaSyAb5n4-5OqHL9V0DE8ImoTv8dg-ltoALXU"
     );
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     const result = await model.generateContent(message);
