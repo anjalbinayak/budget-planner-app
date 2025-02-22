@@ -210,6 +210,69 @@ body {
   font-size: .9rem;
 }
 
+.main-title {
+  color: #3a5a40;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.main-header {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.main-container {
+  background: #fff;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  padding: 40px 60px;
+  transition: transform .3s;
+  display: flex;
+  box-shadow: 0 5px 15px #0000001a;
+}
+
+.main-container:hover {
+  transform: scale(1.05);
+}
+
+.decorative-box {
+  background-color: tomato;
+  border-radius: 15px;
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  animation: 3s linear infinite rotateBox;
+  display: inline-block;
+}
+
+@keyframes rotateBox {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.welcome-text {
+  color: #555;
+  max-width: 350px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
 .btn-primary {
   background: var(--primary);
   color: #fff;

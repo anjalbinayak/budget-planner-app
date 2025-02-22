@@ -24,12 +24,20 @@
     gtag("config", "G-G8TYWWWDB2");
   </script>
   <body>
-    <header>
-      <h1>Budgeter</h1>
+    <header class="main-header">
+      <h1 class="main-title">
+        Budgeter
+        <div class="decorative-box"></div>
+      </h1>
     </header>
-    <main>
-      <button id="signIn" class="btn-primary">Sign In</button>
+    <main class="main-container">
+      <button id="signIn" class="btn-primary btn-signIn">Sign In</button>
+
+      <p class="welcome-text">
+        Welcome to Budgeter! Let's start tracking your finances.
+      </p>
     </main>
+
     <script type="module" src="../js/signIn.js"></script>
   </body>
 </html>
