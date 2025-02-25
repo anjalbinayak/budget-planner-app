@@ -388,6 +388,11 @@ main {
   background: var(--success);
 }
 
+.toast.info {
+  background: var(--primary);
+  color: #fff;
+}
+
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -498,8 +503,8 @@ main {
 #qrcode {
   border: 1px solid var(--surface-200);
   background-color: var(--surface-0);
-  width: 220px;
-  height: 220px;
+  width: 230px;
+  height: 230px;
   box-shadow: var(--shadow-sm);
   border-radius: .5rem;
   justify-content: center;
@@ -596,5 +601,19 @@ header {
   align-items: center;
   margin-top: 20px;
   display: flex;
+}
+
+.rotate {
+  animation: 2s linear infinite rotate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=index.b06117f5.css.map */

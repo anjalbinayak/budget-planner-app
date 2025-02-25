@@ -697,12 +697,13 @@ const loadTransactions = async ()=>{
             div.appendChild(deleteBtn);
             transactionsList.appendChild(div);
         });
+        showToast("Transaction loaded successfully!", "info");
         document.getElementById("totalBalance").textContent = `$${(totalIncome - totalExpenses).toFixed(2)}`;
         document.getElementById("totalIncome").textContent = `$${totalIncome.toFixed(2)}`;
         document.getElementById("totalExpenses").textContent = `$${totalExpenses.toFixed(2)}`;
     } catch (error) {
         showToast("Error loading transactions: " + error.message, "error");
-    }
+    } finally{}
 };
 // Chatbot Functionality
 document.getElementById("chatbotButton").addEventListener("click", ()=>{
@@ -753,6 +754,10 @@ function showToast(message, type = "success") {
 }
 const refreshBtn = document.getElementById("refresh-txn");
 refreshBtn && refreshBtn.addEventListener("click", async ()=>{
+    refreshBtn.classList.add("rotate");
+    setTimeout(()=>{
+        refreshBtn.classList.remove("rotate");
+    }, 2000);
     await loadTransactions();
 });
 function showQRCode() {

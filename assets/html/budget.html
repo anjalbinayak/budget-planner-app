@@ -70,7 +70,7 @@
                 <i class="fas fa-refresh" id="refresh-txn"></i>
               </h2>
               <button id="addTransactionBtn" class="btn-primary">
-                <i class="fas fa-plus"></i> Add Transaction
+                <i class="fas fa-plus"></i> Add
               </button>
             </div>
             <div id="transactionsList" class="transactions-list"></div>
@@ -84,7 +84,7 @@
           <h2>Add Transaction</h2>
           <form id="transactionForm">
             <div class="form-group">
-              <label for="description">Description</label>
+              <label for="description">Name / Category</label>
               <input type="text" id="description" required />
             </div>
             <div class="form-group">
@@ -99,10 +99,10 @@
               </select>
             </div>
             <div class="form-actions">
+              <button type="submit" class="btn-primary">Save</button>
               <button type="button" id="cancelBtn" class="btn-secondary">
                 Cancel
               </button>
-              <button type="submit" class="btn-primary">Save</button>
             </div>
           </form>
         </div>
@@ -139,7 +139,17 @@
       <div class="qr-container">
         <button id="generateQRCodeBtn">Generate QR Code</button>
         <div id="qrcode" style="display: none">
-          <img id="qrImage" />
+          <img id="qrImage" style="display: block; margin: 0 auto" />
+          <span
+            style="
+              display: block;
+              text-align: center;
+              font-size: 11;
+              color: #bab9b9;
+            "
+          >
+            https://anjalbinayak.github.io/budget-planner-app/
+          </span>
         </div>
       </div>
     </main>
