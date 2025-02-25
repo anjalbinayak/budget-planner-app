@@ -505,7 +505,7 @@ main {
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
-  padding: 1rem;
+  padding: .5rem;
   display: flex;
 }
 
@@ -588,5 +588,13 @@ header {
 
 .chatbot-modal.fullscreen .chatbot-input {
   border-top: 1px solid var(--surface-200);
+}
+
+.qr-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  display: flex;
 }
 /*# sourceMappingURL=index.b06117f5.css.map */

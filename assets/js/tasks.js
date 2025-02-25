@@ -11,7 +11,7 @@ import {
 import { db, auth } from "./firebase.js";
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import QRCode from "qrcodejs";
+import QRCode from "qrcode";
 
 const email = JSON.parse(localStorage.getItem("email"));
 
@@ -37,6 +37,7 @@ const generateQRCodeButton = document.getElementById("generateQRCodeBtn");
 
 generateQRCodeButton.addEventListener("click", () => {
   document.getElementById("qrcode").style.display = "block";
+  showQRCode();
 });
 
 // Logout button functionality
@@ -218,16 +219,13 @@ refreshBtn &&
     await loadTransactions();
   });
 
-// window.location.href == "budget.html" &&
-//   (function () {
-//     var qrcode = new QRCode("qrcode", {
-//       text: "https://anjalbinayak.github.io/budget-planner-app/",
-//       width: 240,
-//       height: 240,
-//       colorDark: "#000000",
-//       colorLight: "#ffffff",
-//       correctLevel: QRCode.CorrectLevel.H,
-//     });
-//   })();
+function showQRCode() {
+  QRCode.toDataURL(
+    "https://anjalbinayak.github.io/budget-planner-app/",
+    function (err, url) {
+      document.getElementById("qrImage").src = url;
+    }
+  );
+}
 
 console.log("Script loaded and executed");

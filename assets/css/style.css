@@ -526,7 +526,7 @@ main {
   justify-content: center;
   align-items: center;
   border: 1px solid var(--surface-200);
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
   background-color: var(--surface-0);
   width: 220px;
@@ -621,4 +621,12 @@ header {
 
 .chatbot-modal.fullscreen .chatbot-input {
   border-top: 1px solid var(--surface-200); /* Add a border for separation */
+}
+
+.qr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
 }
