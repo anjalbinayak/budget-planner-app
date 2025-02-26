@@ -64,8 +64,7 @@ Then push the `docs/` folder to your GitHub repository.
 ## Contributing
 Feel free to contribute by forking the repository and submitting a pull request.
 
-## License
-This project is open-source and available under the [MIT License](LICENSE).
+
 
 ## Author
 **Anjal Binayak**
