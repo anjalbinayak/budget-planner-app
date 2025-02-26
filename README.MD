@@ -48,7 +48,7 @@ The app is deployed using GitHub Pages. To deploy manually:
 ```sh
 npm run build
 ```
-Then push the `dist/` folder to your GitHub repository.
+Then push the `docs/` folder to your GitHub repository.
 
 ## Usage
 1. Open the app in a browser.
