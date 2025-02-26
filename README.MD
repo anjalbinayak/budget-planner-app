@@ -35,8 +35,9 @@
    ```
 4. Start the development server:
    ```sh
-   npm start
+   npm run dev:run
    ```
+   The app will run at `http://localhost:1234`
 5. Build the project for production:
    ```sh
    npm run build
